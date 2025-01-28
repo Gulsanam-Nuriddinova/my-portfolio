@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+}
+
+span {
+  display: inline-block;
+}
+
+button {
+  background: transparent;
+}
+
+.container {
+  max-width: 100%;
+  width: 1328px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom:30px ;
+  margin-top: 20px;
+}
+
+.highlight {
+  color: #ff6347;
+  font-weight: bold;
+}
+
+#p-1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+#p-1 img {
+  margin-block-start: auto;
+}
+
+#in-p {
+  flex-wrap: wrap;
+}
+
+#in-p h4 {
+  margin-bottom: 5px;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#project-list {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: grid; 
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 16px; 
+ 
+}
+
+#project-list li {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#project-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#project-list .project-box {
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.project-box h4 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.project-box a {
+  display: inline-block;
+  margin: 8px 4px;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  color: #007bff;
+  font-size: 0.9rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.project-box a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+#accaunts {
+  width: 40%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#accaunts img {
+  margin-bottom: 20px;
+}
+
+#accaunts h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#accaunts a {
+  display: inline-block;
+  font-size: 14px;
+  color: #007acc;
+  text-decoration: none;
+}
+
+#accaunts a:hover {
+  color: #005a99;
+}
+
+.hero-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); 
+  padding: 20px;
+  border-radius: 12px; 
+  max-width: 700px;
+  margin: 20px auto; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  color: #ffffff; 
+}
+
+.contact h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffffff; 
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#contact-list li {
+  margin-bottom: 15px;
+}
+
+#c-l-item div {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+}
+
+#c-l-item a {
+  text-decoration: none; 
+  font-size: 1.2rem;
+  color: #fdfdfd; 
+  transition: color 0.3s ease; 
+}
+
+#c-l-item a:hover {
+  color: #ffeb3b; 
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  #project-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  #all {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  #accaunts {
+    width: 100%;
+  }
+
+  .contact {
+    padding: 15px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  #project-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .project-box h4 {
+    font-size: 1rem;
+  }
+
+  .contact {
+    font-size: 0.9rem;
+  }
+
+  #accaunts h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #project-list {
+    grid-template-columns: 1fr;
+  }
+
+  #all {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #accaunts {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .project-box a {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
